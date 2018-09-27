@@ -225,6 +225,9 @@
     border-bottom: 7px solid transparent;
     content: '';
   }
+  .range-slider__value.show {
+    background-color: #a50505;
+  }
   
   ::-moz-range-track {
     background: #d7dcdf;
@@ -248,7 +251,7 @@
 }
 
 .kilo{
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 /* Input field that looks like a button */
 .kilowats {
@@ -299,7 +302,7 @@
   font-size: 17px;
  border-radius: 4px;
  cursor: pointer; /* for demo only */
- margin-top: 15vh;
+ margin-top: 20vh;
  display: none;
  
 }
@@ -330,7 +333,7 @@
   font-size: 17px;
   border-radius: 4px;
   cursor: pointer; /* for demo only */
-  margin-top: 15vh;
+  margin-top: 20vh;
   display: none;
  }
  #Outline:hover {
