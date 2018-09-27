@@ -351,3 +351,9 @@
    height: auto;
    padding-top: 20%;
  }
+
+ #rd{
+   width: 100%;
+   font-family: Roboto;
+   font-size: 20px;
+ }
