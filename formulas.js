@@ -7,8 +7,10 @@ function on() {
     alert(kilow);
     document.getElementById("rd").innerHTML=kilow;*/
 
-    var s = document.getElementById("valor").val();
-    console.log(s.toString());
+    var s = document.getElementById("valor");
+    var p = $("range-not-rover").val();
+    var kilow = $("#kilowats").val();
+    console.log(p);
     
 }
     
