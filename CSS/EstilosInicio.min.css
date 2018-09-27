@@ -251,7 +251,7 @@
 }
 
 .kilo{
-  margin-top: 15vh;
+  margin-top: 15%;
 }
 /* Input field that looks like a button */
 .kilowats {
@@ -302,7 +302,7 @@
   font-size: 17px;
  border-radius: 4px;
  cursor: pointer; /* for demo only */
- margin-top: 20vh;
+ margin-top: 5%;
  display: none;
  
 }
@@ -333,7 +333,7 @@
   font-size: 17px;
   border-radius: 4px;
   cursor: pointer; /* for demo only */
-  margin-top: 20vh;
+  margin-top: 5%;
   display: none;
  }
  #Outline:hover {
@@ -349,4 +349,5 @@
  .buttones{
    width: 100%;
    height: auto;
+   padding-top: 20%;
  }

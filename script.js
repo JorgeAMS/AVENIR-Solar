@@ -38,3 +38,9 @@ rangeSlider();
 	});
 
 })(window.jQuery);
+
+function mostrar(Online) {
+  var porcentaje = document.getElementsByClassName("range-slider_value").innerHTML;
+  var x = $("#kilowats").val();
+  alert(x);
+}
