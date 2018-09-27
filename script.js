@@ -20,3 +20,21 @@ var rangeSlider = function () {
 };
 
 rangeSlider();
+
+// remap jQuery to $
+(function($){
+
+	/* trigger when page is ready */
+	$(document).ready(function (){
+	
+		// your functions go here
+		$('#kilowats').click(function() {
+			$(this).addClass("active");
+       $(this).attr('placeholder','Consumo según factura');
+      $('#Online').addClass("show");
+      $('#Outline').addClass("show");
+		});
+	
+	});
+
+})(window.jQuery);
