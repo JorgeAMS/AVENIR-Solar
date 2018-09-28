@@ -71,6 +71,8 @@ function clickeado(){
   }
 
   $('#boxing').addClass("boxing");
+  $('#boxing').addClass("animatedIN");
+  $('#boxing').addClass("fadeIn");
   document.getElementById('TipoSolucion1').innerHTML="Tipo Solución: ";
   document.getElementById('Accesorios1').innerHTML="Accesorios: ";
   document.getElementById('SolucionSolar1').innerHTML="Solución Solar: ";
@@ -90,6 +92,8 @@ function clickeado(){
   document.getElementById('Asesoria2').innerHTML="Gratis!";
   document.getElementById('Mantenimiento2').innerHTML=Mantenimiento;
   document.getElementById('Total2').innerHTML=Total;
+
+
 
 }
 
