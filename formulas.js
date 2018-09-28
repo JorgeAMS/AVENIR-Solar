@@ -54,6 +54,18 @@ function click(){
   function on() {
     var s = document.getElementById("valor");
     var p = $("range-not-rover").val();
+<<<<<<< HEAD
+=======
+    var kilow = $("#kilowats").val();
+    console.log(p);
+
+    //Obtener valor del range
+    var capValue = document.getElementById("rangeVAL").value;
+    console.log(capValue);
+    //Obtener kWh input
+    var kwhInput =  document.getElementById("kilowats").value;
+    console.log(kwhInput);
+>>>>>>> 32ffb5bf8eddd34207b769bde87e420d4b0b59a1
     
     console.log(p);
 
