@@ -22,7 +22,7 @@ var kilow,
 
  */
 
-function clickeado(){ 
+function clickeado(){
   //Obtener valor del range
   porcentaje = document.getElementById("rangeVAL").value;
   console.log(porcentaje);
@@ -34,7 +34,7 @@ function clickeado(){
     TipoSolucion=1;
   }
   else{
-    TipoSolucion=((((((kilow*porcentaje)*10)/30))/1500)+1);
+    TipoSolucion=Math.round(((((((kilow*porcentaje)*10)/30))/1500)+1));
   }
   Accesorios=TipoSolucion*6;
 
@@ -42,31 +42,55 @@ function clickeado(){
   console.log("Accesorios: "+Accesorios);
 
   if(porcentaje<100){ //En Red
-    SolucionSolar=((TipoSolucion*500000)/3050)+700;
-    console.log("SolucionSolar: "+SolucionSolar);
-    ManoObra=SolucionSolar*0.12;
-    console.log("ManoObra: "+ManoObra);
-    Transporte=SolucionSolar*0.07;
-    console.log("Transporte: "+Transporte);
-    Mantenimiento=SolucionSolar*0.03;
-    console.log("Mantenimiento: "+Mantenimiento);
+    SolucionSolar=Math.round(((TipoSolucion*500000)/3050)+700);
+    //console.log("SolucionSolar: "+SolucionSolar);
+    ManoObra=Math.round(SolucionSolar*0.12);
+    //console.log("ManoObra: "+ManoObra);
+    Transporte=Math.round(SolucionSolar*0.07);
+    //console.log("Transporte: "+Transporte);
+    Almacenamiento="No aplica";
+    //console.log("Almacenamiento: "+Almacenamiento);
+    Mantenimiento=Math.round(SolucionSolar*0.03);
+    //console.log("Mantenimiento: "+Mantenimiento);
     Total=Math.round(SolucionSolar+ManoObra+Transporte+Mantenimiento);
-    console.log("Total: "+Total);
+    //console.log("Total: "+Total);
   }
   if(porcentaje==100){ //Fuera de Red
-    SolucionSolar=(((((kilow*1000)/30)/1500)*500000)/3050)+200;
-    console.log("SolucionSolar: "+SolucionSolar);
-    ManoObra=SolucionSolar*0.12;
-    console.log("ManoObra: "+ManoObra);
-    Almacenamiento=(((((kilow*1000)/30)/3.6)*2100)+((((kilow*1000)/30)/3.6)*2100)*0.15)/3050;
-    console.log("Almacenamiento: "+Almacenamiento);
-    Transporte=SolucionSolar*0.07;
-    console.log("Transporte: "+Transporte);
-    Mantenimiento=(SolucionSolar+Almacenamiento)*0.03;
-    console.log("Mantenimiento: "+Mantenimiento);
+    SolucionSolar=Math.round((((((kilow*1000)/30)/1500)*500000)/3050)+200);
+    //console.log("SolucionSolar: "+SolucionSolar);
+    ManoObra=Math.round(SolucionSolar*0.12);
+    //console.log("ManoObra: "+ManoObra);
+    Almacenamiento=Math.round((((((kilow*1000)/30)/3.6)*2100)+((((kilow*1000)/30)/3.6)*2100)*0.15)/3050);
+    //console.log("Almacenamiento: "+Almacenamiento);
+    Transporte=Math.round(SolucionSolar*0.07);
+    //console.log("Transporte: "+Transporte);
+    Mantenimiento=Math.round((SolucionSolar+Almacenamiento)*0.03);
+    //console.log("Mantenimiento: "+Mantenimiento);
     Total=Math.round(SolucionSolar+ManoObra+Almacenamiento+Transporte+Mantenimiento);
-    console.log("Total: "+Total);
+    //console.log("Total: "+Total);
   }
+
+  $('#boxing').addClass("boxing");
+  document.getElementById('TipoSolucion1').innerHTML="Tipo Solución: ";
+  document.getElementById('Accesorios1').innerHTML="Accesorios: ";
+  document.getElementById('SolucionSolar1').innerHTML="Solución Solar: ";
+  document.getElementById('ManoObra1').innerHTML="Mano de Obra: ";
+  document.getElementById('Almacenamiento1').innerHTML="Modulo de Almacenamiento: ";
+  document.getElementById('Transporte1').innerHTML="Transporte: ";
+  document.getElementById('Asesoria1').innerHTML="Asesoria - Soporte: ";
+  document.getElementById('Mantenimiento1').innerHTML="Mantenimiento (Cada dos años): ";
+  document.getElementById('Total1').innerHTML="Total: ";
+
+  document.getElementById('TipoSolucion2').innerHTML=TipoSolucion;
+  document.getElementById('Accesorios2').innerHTML=Accesorios;
+  document.getElementById('SolucionSolar2').innerHTML=SolucionSolar;
+  document.getElementById('ManoObra2').innerHTML=ManoObra;
+  document.getElementById('Almacenamiento2').innerHTML=Almacenamiento;
+  document.getElementById('Transporte2').innerHTML=Transporte;
+  document.getElementById('Asesoria2').innerHTML="Gratis!";
+  document.getElementById('Mantenimiento2').innerHTML=Mantenimiento;
+  document.getElementById('Total2').innerHTML=Total;
+
 }
 
 /*

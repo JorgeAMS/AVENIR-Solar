@@ -31,8 +31,7 @@ rangeSlider();
 		$('#kilowats').click(function() {
 			$(this).addClass("active");
        $(this).attr('placeholder','Consumo según factura');
-      $('#solucion').addClass("show");
-      $('#solucion').addClass("show");
+      
 		});
 	
 	});
