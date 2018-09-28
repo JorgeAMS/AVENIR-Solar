@@ -22,7 +22,7 @@ var kilow,
 
  */
 
-function click(){
+function clickeado(){ 
   //Obtener valor del range
   porcentaje = document.getElementById("rangeVAL").value;
   console.log(porcentaje);
@@ -30,7 +30,6 @@ function click(){
   kilow =  document.getElementById("kilowats").value;
   console.log(kilow);
   
-
   if(((((kilow*porcentaje)*1000)/30)/1500) < 1){
     TipoSolucion=1;
   }
@@ -39,12 +38,20 @@ function click(){
   }
   Accesorios=TipoSolucion*6;
 
+  console.log("TipoSolucion: "+TipoSolucion);
+  console.log("Accesorios: "+Accesorios);
+
   if(porcentaje<100){ //En Red
     SolucionSolar=((TipoSolucion*500000)/3050)+700;
+    console.log("SolucionSolar: "+SolucionSolar);
     ManoObra=SolucionSolar*0,12;
+    console.log("ManoObra: "+ManoObra);
     Transporte=SolucionSolar*0,07;
+    console.log("Transporte: "+Transporte);
     Mantenimiento=SolucionSolar*0,03;
+    console.log("Mantenimiento: "+Mantenimiento);
     Total=Accesorios+SolucionSolar+ManoObra+Transporte+Mantenimiento;
+    console.log("Total: "+Total);
   }
   if(porcentaje==100){ //Fuera de Red
     SolucionSolar=(((((kilow*1000)/30)/1500)*500000)/3050)+200;
@@ -53,6 +60,7 @@ function click(){
     Transporte=SolucionSolar*0,07;
     Mantenimiento=(SolucionSolar+Almacenamiento)*0,03;
     Total=Accesorios+SolucionSolar+ManoObra+Transporte+Mantenimiento;
+    console.log("Total: "+Total);
   }
 }
 
