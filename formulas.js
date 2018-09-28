@@ -11,6 +11,13 @@ function on() {
     var p = $("range-not-rover").val();
     var kilow = $("#kilowats").val();
     console.log(p);
+
+    //Optener valor del range
+    var capValue = document.getElementById("rangeVAL").value;
+    console.log(capValue);
+    //Optener kWh input
+    var kwhInput =  document.getElementById("kilowats").value;
+    console.log(kwhInput);
     
 }
     
