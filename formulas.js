@@ -75,10 +75,10 @@ function clickeado(){
   document.getElementById('Accesorios1').innerHTML="Accesorios: ";
   document.getElementById('SolucionSolar1').innerHTML="Solución Solar: ";
   document.getElementById('ManoObra1').innerHTML="Mano de Obra: ";
-  document.getElementById('Almacenamiento1').innerHTML="Modulo de Almacenamiento: ";
+  document.getElementById('Almacenamiento1').innerHTML="Modulo Almacenamiento: ";
   document.getElementById('Transporte1').innerHTML="Transporte: ";
   document.getElementById('Asesoria1').innerHTML="Asesoria - Soporte: ";
-  document.getElementById('Mantenimiento1').innerHTML="Mantenimiento (Cada dos años): ";
+  document.getElementById('Mantenimiento1').innerHTML="Mantenimiento: ";
   document.getElementById('Total1').innerHTML="Total: ";
 
   document.getElementById('TipoSolucion2').innerHTML=TipoSolucion;

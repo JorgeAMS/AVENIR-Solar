@@ -128,8 +128,9 @@
 
 .range-slider {
   margin: 60px 0 0 0;
-  width: 500px;
+  width: 80%;
   padding: 0 5% 0 5%;
+  margin-left: 10%;
 }
 
 .percent{
@@ -147,8 +148,8 @@
   }
 
 }
-
-@media (max-width: 1400px){
+/*1400*/
+@media (max-width: 1150px){
   
   .range-slider{
     margin: 60px 0 0 0;
@@ -322,8 +323,59 @@
    padding-top: 20%;
  }
 
- #rd{
-   width: 100%;
+ .boxing{
+   width: 90%;
+   height: 350px;
    font-family: Roboto;
    font-size: 20px;
+   margin-top: 20%;
+   margin-left: 10%;
+   border: 1px solid #19344e;
+   border-radius: 15px;
+   background-color: #19344e49;
  }
+
+
+#col1{
+  position:absolute;
+  width: 25%;
+  margin: 2% 0 0 0;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+}
+#col2{
+  position: absolute;
+  width: 15%;
+  margin: 2% 0 0 25%;
+  padding-left: 10px;
+  padding-right: 5%;
+}
+
+@media (max-width: 1150px){
+  .boxing{
+    width: 80%;
+    height: 300px;
+    font-family: Roboto;
+    font-size: 120%;
+    margin-top: 20%;
+    margin-left: 10%;
+    border: 1px solid #19344e;
+    border-radius: 15px;
+    background-color: #19344e49;
+    margin-bottom: 10%;
+  }
+  #col1{
+    position:absolute;
+    width: 40%;
+    margin: 2% 0 0 0;
+    text-align: right;
+    font-weight: bold;
+  }
+  #col2{
+    position: absolute;
+    width: 40%;
+    margin: 2% 0 0 40%;
+    padding-left: 10px;
+  }
+}
