@@ -15,7 +15,7 @@ function on() {
     //Obtener valor del range
     var capValue = document.getElementById("rangeVAL").value;
     console.log(capValue);
-    //Optener kWh input
+    //Obtener kWh input
     var kwhInput =  document.getElementById("kilowats").value;
     console.log(kwhInput);
     
