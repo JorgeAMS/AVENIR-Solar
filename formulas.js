@@ -30,11 +30,11 @@ function clickeado(){
   kilow =  document.getElementById("kilowats").value;
   console.log(kilow);
   
-  if(((((kilow*porcentaje)*1000)/30)/1500) < 1){
+  if((((((kilow*porcentaje)*10)/30))/1500) < 1){
     TipoSolucion=1;
   }
   else{
-    TipoSolucion=(((((kilow*porcentaje)*1000)/30))/1500)+1;
+    TipoSolucion=((((((kilow*porcentaje)*10)/30))/1500)+1);
   }
   Accesorios=TipoSolucion*6;
 
