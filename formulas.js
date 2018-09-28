@@ -23,9 +23,15 @@ var kilow,
  */
 
 function click(){
-  kilow = $("#kilowats").val();
+  //Obtener valor del range
+  porcentaje = document.getElementById("rangeVAL").value;
+  console.log(porcentaje);
+  //Obtener kWh input
+  kilow =  document.getElementById("kilowats").value;
+  console.log(kilow);
+  
 
-  if((((kilow*porcentaje)*1000)/30)/1500 < 1){
+  if(((((kilow*porcentaje)*1000)/30)/1500) < 1){
     TipoSolucion=1;
   }
   else{
@@ -54,8 +60,7 @@ function click(){
   function on() {
     var s = document.getElementById("valor");
     var p = $("range-not-rover").val();
-<<<<<<< HEAD
-=======
+    
     var kilow = $("#kilowats").val();
     console.log(p);
 
@@ -65,7 +70,6 @@ function click(){
     //Obtener kWh input
     var kwhInput =  document.getElementById("kilowats").value;
     console.log(kwhInput);
->>>>>>> 32ffb5bf8eddd34207b769bde87e420d4b0b59a1
     
     console.log(p);
 
