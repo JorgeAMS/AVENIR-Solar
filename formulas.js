@@ -44,22 +44,27 @@ function clickeado(){
   if(porcentaje<100){ //En Red
     SolucionSolar=((TipoSolucion*500000)/3050)+700;
     console.log("SolucionSolar: "+SolucionSolar);
-    ManoObra=SolucionSolar*0,12;
+    ManoObra=SolucionSolar*0.12;
     console.log("ManoObra: "+ManoObra);
-    Transporte=SolucionSolar*0,07;
+    Transporte=SolucionSolar*0.07;
     console.log("Transporte: "+Transporte);
-    Mantenimiento=SolucionSolar*0,03;
+    Mantenimiento=SolucionSolar*0.03;
     console.log("Mantenimiento: "+Mantenimiento);
-    Total=Accesorios+SolucionSolar+ManoObra+Transporte+Mantenimiento;
+    Total=Math.round(SolucionSolar+ManoObra+Transporte+Mantenimiento);
     console.log("Total: "+Total);
   }
   if(porcentaje==100){ //Fuera de Red
     SolucionSolar=(((((kilow*1000)/30)/1500)*500000)/3050)+200;
-    ManoObra=SolucionSolar*0,12;
-    Almacenamiento=(((((kilow*1000)/30)/3,6)*2100)+((((kilow*1000)/30)/3,6)*2100)*0,15)/3050;
-    Transporte=SolucionSolar*0,07;
-    Mantenimiento=(SolucionSolar+Almacenamiento)*0,03;
-    Total=Accesorios+SolucionSolar+ManoObra+Transporte+Mantenimiento;
+    console.log("SolucionSolar: "+SolucionSolar);
+    ManoObra=SolucionSolar*0.12;
+    console.log("ManoObra: "+ManoObra);
+    Almacenamiento=(((((kilow*1000)/30)/3.6)*2100)+((((kilow*1000)/30)/3.6)*2100)*0.15)/3050;
+    console.log("Almacenamiento: "+Almacenamiento);
+    Transporte=SolucionSolar*0.07;
+    console.log("Transporte: "+Transporte);
+    Mantenimiento=(SolucionSolar+Almacenamiento)*0.03;
+    console.log("Mantenimiento: "+Mantenimiento);
+    Total=Math.round(SolucionSolar+ManoObra+Almacenamiento+Transporte+Mantenimiento);
     console.log("Total: "+Total);
   }
 }
