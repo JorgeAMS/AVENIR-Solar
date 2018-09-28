@@ -12,7 +12,7 @@ function on() {
     var kilow = $("#kilowats").val();
     console.log(p);
 
-    //Optener valor del range
+    //Obtener valor del range
     var capValue = document.getElementById("rangeVAL").value;
     console.log(capValue);
     //Optener kWh input
