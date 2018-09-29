@@ -45,7 +45,8 @@
 
 
 #ProyectoContenido #ProyectoCerrar{
-    width:30px;height:30px;
+    width:30px;
+    height:30px;
     border-radius:50%;
     background-color:red;
     float:right;
@@ -96,7 +97,7 @@
 }
 #ProyectoContenido #ProyectoTexto{
     color:black;
-    font-size:1.5em;
+    font-size:2.2em;
     padding-left:10%;
     padding-right: 10%;
     padding-top: 20px;
@@ -108,7 +109,7 @@
 }
 
 #Simulacion{
-  font-family: sans-serif;
+  font-family: Roboto;
   width: 80%;
   height: 85vh;
   margin-left: 10%;
@@ -305,7 +306,6 @@
  cursor: pointer; /* for demo only */
  margin-top: 5%;
  display: none;
- 
 }
 #solucion:hover {
  opacity: .85;
@@ -317,23 +317,23 @@
  background-size: 33px;
 }
 
- .buttones{
-   width: 100%;
-   height: auto;
-   padding-top: 20%;
- }
+.buttones{
+  width: 100%;
+  height: auto;
+  padding-top: 20%;
+}
 
- .boxing{
-   width: 90%;
-   height: 350px;
-   font-family: Roboto;
-   font-size: 20px;
-   margin-top: 20%;
-   margin-left: 10%;
-   border: 1px solid #19344e;
-   border-radius: 15px;
-   background-color: #19344e49;
- }
+.boxing{
+  width: 90%;
+  height: 350px;
+  font-family: Roboto;
+  font-size: 20px;
+  margin-top: 20%;
+  margin-left: 10%;
+  border: 1px solid #19344e;
+  border-radius: 15px;
+  background-color: #19344e49;
+}
 
 
 #col1{
@@ -350,6 +350,19 @@
   margin: 2% 0 0 25%;
   padding-left: 10px;
   padding-right: 5%;
+}
+
+.animatedIN { 
+  animation-duration: 2s; 
+  animation-fill-mode: both; 
+} 
+
+@keyframes fadeIn { 
+  0% {opacity: 0;} 
+  100% {opacity: 1;} 
+} 
+.fadeIn { 
+  animation-name: fadeIn; 
 }
 
 @media (max-width: 1150px){
@@ -380,15 +393,197 @@
   }
 }
 
-.animatedIN { 
-  animation-duration: 2s; 
-  animation-fill-mode: both; 
-} 
 
-@keyframes fadeIn { 
-  0% {opacity: 0;} 
-  100% {opacity: 1;} 
-} 
-.fadeIn { 
-  animation-name: fadeIn; 
+
+
+
+
+
+
+
+
+
+
+
+/*------------------FOR DEVICES------------*/
+@media (max-width: 1024px){
+  .kilowats {
+    width: 70%;
+    height: 60px;;
+    color: #f4f2ca;
+    font-size: 35px;
+    text-align: center;
+    margin-left: 15%;
+    background-color: #2c3e50;
+    padding: .9em 1.8em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    transition: all .1s linear;
+   }
+   .kilowats.active {
+    width: 70%;
+    outline: none;
+    color: #e4dada;
+    text-align: center;
+    cursor: inherit;
+   }
+  .percent{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 45px;
+  }
+  #solucion {
+    margin: 0 10% 0 10%;
+    width: 80%;
+    height: 80px;
+    border: none;
+    background-size: 13px;
+    background-position: 0 1px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    background-color: #2c3e50;
+    color: #e4dada;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 4px;
+    cursor: pointer; /* for demo only */
+    margin-top: 5%;
+    display: none;
+   }
+
+  #Simulacion{
+    font-family: Roboto;
+    width: 80%;
+    height: 200vh;
+    margin-left: 10%;
+  }
+
+  .boxing{
+    width: 80%;
+    height: 1300px;
+    font-family: Roboto;
+    font-size: 2em;
+    margin-top: 20%;
+    margin-left: 10%;
+    border: 1px solid #19344e;
+    border-radius: 15px;
+    background-color: #19344e49;
+    margin-bottom: 10%;
+  }
+  #col1{
+    position:absolute;
+    width: 60%;
+    margin: 1% 0 0 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  #col2{
+    position: absolute;
+    width: 60%;
+    margin: 1% 0 0 0;
+    text-align: center;
+  }
+
+  /*-----------------------------------------------*/
+  #TipoSolucion1{
+    width: 100%;
+    margin-top: 0px;
+  }
+  #TipoSolucion2{
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #Accesorios1{
+    width: 100%;
+    margin-top: 55px;
+  }
+  #Accesorios2{
+    width: 100%;
+    margin-top: 55px;
+  }
+
+  #SolucionSolar1{
+    width: 100%;
+    margin-top: 70px;
+    height: 20px;
+  }
+  #SolucionSolar2{
+    width: 100%;
+    margin-top: 70px;
+    height: 20px;
+  }
+
+  #ManoObra1{
+    width: 100%;
+    margin-top: 85px;
+    height: 20px;
+  }
+  #ManoObra2{
+    width: 100%;
+    margin-top: 85px;
+    height: 20px;
+  }
+
+  #Almacenamiento1{
+    width: 100%;
+    margin-top: 100px;
+    height: 20px;
+  }
+  #Almacenamiento2{
+    width: 100%;
+    margin-top: 100px;
+    height: 20px;
+  }
+
+  #Transporte1{
+    width: 100%;
+    margin-top: 115px;
+    height: 20px;
+  }
+  #Transporte2{
+    width: 100%;
+    margin-top: 115px;
+    height: 20px;
+  }
+
+  #Asesoria1{
+    width: 100%;
+    margin-top: 130px;
+    height: 20px;
+  }
+  #Asesoria2{
+    width: 100%;
+    margin-top: 130px;
+    height: 20px;
+  }
+
+  #Mantenimiento1{
+    width: 100%;
+    margin-top: 145px;
+    height: 20px;
+  }
+  #Mantenimiento2{
+    width: 100%;
+    margin-top: 145px;
+    height: 20px;
+  }
+
+  #Total1{
+    width: 100%;
+    margin-top: 160px;
+    height: 20px;
+  }
+  #Total2{
+    width: 100%;
+    margin-top: 160px;
+    height: 20px;
+  }
 }
