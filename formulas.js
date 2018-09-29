@@ -23,7 +23,7 @@ var kilow,
  */
 
 function clickeado(){
-  
+
   porcentaje = document.getElementById("rangeVAL").value;
   console.log(porcentaje);
 
@@ -50,7 +50,7 @@ function clickeado(){
     //console.log("Transporte: "+Transporte);
     Almacenamiento="No aplica";
     //console.log("Almacenamiento: "+Almacenamiento);
-    Mantenimiento=Math.round(SolucionSolar*0.03);
+    Mantenimiento=Math.round(SolucionSolar*0.03)+1;
     //console.log("Mantenimiento: "+Mantenimiento);
     Total=Math.round(SolucionSolar+ManoObra+Transporte+Mantenimiento);
     //console.log("Total: "+Total);
@@ -64,7 +64,7 @@ function clickeado(){
     //console.log("Almacenamiento: "+Almacenamiento);
     Transporte=Math.round(SolucionSolar*0.07);
     //console.log("Transporte: "+Transporte);
-    Mantenimiento=Math.round((SolucionSolar+Almacenamiento)*0.03);
+    Mantenimiento=Math.round((SolucionSolar+Almacenamiento)*0.03)+1;
     //console.log("Mantenimiento: "+Mantenimiento);
     Total=Math.round(SolucionSolar+ManoObra+Almacenamiento+Transporte+Mantenimiento);
     //console.log("Total: "+Total);
