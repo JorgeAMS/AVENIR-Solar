@@ -14,7 +14,7 @@ var rangeSlider = function () {
     range.on("input", function () {
       $(this).
       next(value).
-      html(this.value);
+      html(this.value+"%");
     });
   });
 };

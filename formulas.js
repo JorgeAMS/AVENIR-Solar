@@ -23,10 +23,10 @@ var kilow,
  */
 
 function clickeado(){
-  //Obtener valor del range
+  
   porcentaje = document.getElementById("rangeVAL").value;
   console.log(porcentaje);
-  //Obtener kWh input
+
   kilow =  document.getElementById("kilowats").value;
   console.log(kilow);
   
