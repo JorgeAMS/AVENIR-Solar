@@ -27,10 +27,10 @@ function clickeado(){
   var filtro = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ .-,=)(/&%$#"!|°¬\?+*][{}^`_:;¿<>@';
   var ch;
   porcentaje = document.getElementById("rangeVAL").value;
-  console.log(porcentaje);
+  //console.log(porcentaje);
 
   kilow =  document.getElementById("kilowats").value;
-  console.log(kilow);
+  //console.log(kilow);
   
   for(var i=0; i<kilow.length; i++){
     for(var y=0; y<filtro.length; y++){
@@ -44,7 +44,7 @@ function clickeado(){
     alert("Por favor ingrese los Kilowats consumidos, no ingrese puntos, rayas, comas o caracteres.");
   }
   else{
-    
+
     if((((((kilow*porcentaje)*10)/30))/1500) < 1){
       TipoSolucion=1;
     }
@@ -53,8 +53,8 @@ function clickeado(){
     }
     Accesorios=TipoSolucion*6;
 
-    console.log("TipoSolucion: "+TipoSolucion);
-    console.log("Accesorios: "+Accesorios);
+    //console.log("TipoSolucion: "+TipoSolucion);
+    //console.log("Accesorios: "+Accesorios);
 
     if(porcentaje<100){ //En Red
       SolucionSolar=Math.round(((TipoSolucion*500000)/3050)+700);
