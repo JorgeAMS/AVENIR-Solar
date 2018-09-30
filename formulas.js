@@ -24,17 +24,27 @@ var kilow,
 
 function clickeado(){
   
-
+  var filtro = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ .-,=)(/&%$#"!|°¬\?+*][{}^`_:;¿<>@';
+  var ch;
   porcentaje = document.getElementById("rangeVAL").value;
   console.log(porcentaje);
 
   kilow =  document.getElementById("kilowats").value;
   console.log(kilow);
   
-  if(kilow==null || kilow==0){
+  for(var i=0; i<kilow.length; i++){
+    for(var y=0; y<filtro.length; y++){
+        if(kilow.charAt(i)==filtro.charAt(y)){
+            ch=1;
+        }
+      }
+    }
+
+  if(kilow==null || kilow==0 || ch==1){
     alert("Por favor ingrese los Kilowats consumidos, no ingrese puntos, rayas, comas o caracteres.");
   }
   else{
+
 
     if((((((kilow*porcentaje)*10)/30))/1500) < 1){
       TipoSolucion=1;
