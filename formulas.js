@@ -44,8 +44,7 @@ function clickeado(){
     alert("Por favor ingrese los Kilowats consumidos, no ingrese puntos, rayas, comas o caracteres.");
   }
   else{
-
-
+    
     if((((((kilow*porcentaje)*10)/30))/1500) < 1){
       TipoSolucion=1;
     }
