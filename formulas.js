@@ -41,7 +41,7 @@ function clickeado(){
     }
 
   if(kilow==null || kilow==0 || ch==1){
-    alert("Por favor ingrese los Kilowats consumidos, no ingrese puntos, rayas, comas o caracteres.");
+    alert("Por favor ingrese los Kilowats consumidos, no ingrese puntos, rayas, comas o ninguna clase de caracteres.");
   }
   else{
 
